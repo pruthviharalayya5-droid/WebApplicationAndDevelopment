@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL 2026 Ticket Booking</title>
+</head>
+<body>
+
+<header>
+    <h1>IPL 2026 Ticket Booking</h1>
+
+    <nav>
+        <a href="#matches">Matches</a> |
+        <a href="#booking">Book Tickets</a> |
+        <a href="#guidelines">Guidelines</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Experience the Thrill of IPL 2026!</h2>
+    <img src="images/ipl20206.jpg" alt="IPL 2026" width="100%">
+    <p>Book your tickets and enjoy live cricket!</p>
+</section>
+
+<section id="matches">
+    <h2>Select Your Match</h2>
+    <form>
+        <label for="match">Choose a Match:</label>
+        <select id="match" name="match">
+            <option>RCB vs Mumbai Indians</option>
+            <option>CSK vs Kolkata Knight Riders</option>
+        </select>
+    </form>
+</section>
+
+<section>
+    <h2>Match Schedule</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Match</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>RCB vs MI</td>
+            <td>April 5, 2026</td>
+            <td>7:30 PM</td>
+            <td>Wankhede Stadium, Mumbai</td>
+        </tr>
+        <tr>
+            <td>CSK vs KKR</td>
+            <td>April 6, 2026</td>
+            <td>7:30 PM</td>
+            <td>Eden Gardens, Kolkata</td>
+        </tr>
+    </table>
+</section>
+
+<section id="booking">
+    <h2>Book Your Tickets</h2>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="ticket">Number of Tickets:</label>
+        <select id="ticket" name="ticket">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <br><br>
+
+        <label for="stand">Select Stand:</label>
+        <select id="stand" name="stand">
+            <option>General</option>
+            <option>Premium</option>
+            <option>VIP</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Book Tickets</button>
+    </form>
+</section>
+
+<section id="guidelines">
+    <h2>Match Guidelines</h2>
+
+    <h3>Entry Guidelines</h3>
+    <ul>
+        <li>Carry a valid ticket.</li>
+        <li>Carry a valid ID proof.</li>
+        <li>Arrive at the stadium early.</li>
+    </ul>
+
+    <h3>Prohibited Items</h3>
+    <ul>
+        <li>Weapons and sharp objects are prohibited.</li>
+        <li>Dangerous materials are prohibited.</li>
+        <li>Follow stadium security rules.</li>
+    </ul>
+
+    <h3>General Instructions</h3>
+    <ul>
+        <li>Keep the stadium clean.</li>
+        <li>Do not damage stadium property.</li>
+        <li>Follow stadium officials' instructions.</li>
+    </ul>
+</section>
+</body>
+</html>
