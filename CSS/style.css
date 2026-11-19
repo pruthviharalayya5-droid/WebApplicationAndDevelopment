@@ -120,3 +120,16 @@ body > section.booking-section {
 #booking-form select {
     margin: 8px;
 }
+
+/* Toast Notification */
+#toast {
+    display: none;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
