@@ -95,3 +95,28 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+/* Booking Section */
+.booking-section {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+/* Booking Section */
+body > section.booking-section {
+    background: white;
+    color: black;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+#booking-form label {
+    font-weight: bold;
+}
+
+#booking-form input,
+#booking-form select {
+    margin: 8px;
+}

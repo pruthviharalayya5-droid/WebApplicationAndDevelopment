@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Ticket Booking Form</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<header>
+    <h1>IPL 2026 Ticket Booking</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="booking.html">Book Tickets</a>
+    </nav>
+</header>
+
+<section class="booking-section">
+    <h2>Ticket Booking Form</h2>
+
+    <form id="booking-form">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"
+               minlength="3" maxlength="30" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               minlength="10" maxlength="10" required>
+        <br><br>
+
+        <label for="match">Select Match:</label>
+        <select id="match" name="match" required>
+            <option value="">Choose Match</option>
+            <option>RCB vs Mumbai Indians</option>
+            <option>CSK vs Kolkata Knight Riders</option>
+        </select>
+        <br><br>
+
+        <label for="stand">Select Stand:</label>
+        <select id="stand" name="stand" required>
+            <option value="">Choose Stand</option>
+            <option>General</option>
+            <option>Premium</option>
+            <option>VIP</option>
+        </select>
+        <br><br>
+
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets"
+               min="1" max="5" required>
+        <br><br>
+
+        <h3>Additional Preferences</h3>
+
+        <input type="checkbox" id="food" name="preference" value="Food">
+        <label for="food">Food Required</label>
+        <br>
+
+        <input type="checkbox" id="parking" name="preference" value="Parking">
+        <label for="parking">Parking Required</label>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 IPL Ticket Booking</p>
+</footer>
+
+</body>
+</html>
