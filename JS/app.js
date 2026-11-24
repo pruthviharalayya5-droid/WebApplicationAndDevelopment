@@ -39,3 +39,40 @@ function updateSummary() {
 document.getElementById("bookingMatch").addEventListener("change", updateSummary);
 document.getElementById("stand").addEventListener("change", updateSummary);
 document.getElementById("ticket").addEventListener("change", updateSummary);
+
+// Team Filter
+document.getElementById("teamFilter").addEventListener("change", function() {
+    let selectedTeam = this.value;
+    let cards = document.querySelectorAll(".match-card");
+
+    cards.forEach(function(card) {
+        let teams = card.getAttribute("data-teams");
+
+        if (selectedTeam === "all" || teams.includes(selectedTeam)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+// Grid View
+document.getElementById("gridView").addEventListener("click", function() {
+    document.getElementById("matchContainer").className = "match-grid";
+});
+
+// List View
+document.getElementById("listView").addEventListener("click", function() {
+    document.getElementById("matchContainer").className = "match-list";
+});
+
+// Hamburger Menu
+document.getElementById("menuToggle").addEventListener("click", function() {
+    let menu = document.getElementById("navMenu");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+});

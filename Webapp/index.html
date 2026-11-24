@@ -8,23 +8,22 @@
 
 <header>
     <h1>IPL 2026 Ticket Booking</h1>
-    
 
-    <nav>
-        <a href="#matches">Matches</a> 
+    <button id="menuToggle" type="button">☰</button>
+
+    <nav id="navMenu">
+        <a href="#matches">Matches</a>
         <a href="#guidelines">Guidelines</a>
         <a href="booking.html">Book Tickets</a>
     </nav>
 </header>
-
 <section>
     <h2>Experience the Thrill of IPL 2026!</h2>
     <img src="../img/IPL.webp" alt="IPL 2026" width="33.3%">
     <p>Book your tickets and enjoy live cricket!</p>
 </section>
 
-<section id="matches">
-    <h2>Select Your Match</h2>
+<section id="match-selector">
     <form>
         <label for="match">Choose a Match:</label>
         <select id="match" name="match">
@@ -34,35 +33,41 @@
     </form>
 </section>
 
-<section>
+<section id="matches">
     <h2>Match Schedule</h2>
 
-    <table border="1" cellpadding="8">
-        <tr>
-            <th>Match</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Venue</th>
-        </tr>
-        <tr>
-            <td>RCB vs MI</td>
-            <td>April 5, 2026</td>
-            <td>7:30 PM</td>
-            <td>Wankhede Stadium, Mumbai</td>
-            <td>
-                   <button type="button" onclick="bookTickets()">Book</button>
-            </td>
-        </tr>
-        <tr>
-            <td>CSK vs KKR</td>
-            <td>April 6, 2026</td>
-            <td>7:30 PM</td>
-            <td>Eden Gardens, Kolkata</td>
-            <td>
-                   <button type="button" onclick="bookTickets()">Book</button>
-            </td>
-        </tr>
-    </table>
+    <label for="teamFilter">Filter by Team:</label>
+    <select id="teamFilter">
+        <option value="all">All Teams</option>
+        <option value="RCB">RCB</option>
+        <option value="MI">Mumbai Indians</option>
+        <option value="CSK">CSK</option>
+        <option value="KKR">KKR</option>
+    </select>
+
+    <button id="gridView">Grid View</button>
+    <button id="listView">List View</button>
+
+    <div id="matchContainer" class="match-grid">
+
+        <div class="match-card" data-teams="RCB MI">
+            <h3>RCB vs Mumbai Indians</h3>
+            <p>Date: April 5, 2026</p>
+            <p>Time: 7:30 PM</p>
+            <p>Venue: Wankhede Stadium, Mumbai</p>
+            <button type="button" onclick="bookTickets()">Book</button>
+        </div>
+
+        <div class="match-card" data-teams="CSK KKR">
+            <h3>CSK vs Kolkata Knight Riders</h3>
+            <p>Date: April 6, 2026</p>
+            <p>Time: 7:30 PM</p>
+            <p>Venue: Eden Gardens, Kolkata</p>
+            <button type="button" onclick="bookTickets()">Book</button>
+        </div>
+
+    </div>
+</section>
 </section>
 
 <section id="booking">
