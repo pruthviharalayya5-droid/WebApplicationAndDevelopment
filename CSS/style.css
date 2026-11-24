@@ -133,3 +133,16 @@ body > section.booking-section {
     bottom: 20px;
     right: 20px;
 }
+
+/* Booking Summary Card */
+#bookingSummary {
+    background-color: lightgray;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+#bookingSummary p {
+    margin: 10px 0;
+}
